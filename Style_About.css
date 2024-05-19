@@ -1,0 +1,309 @@
+/*
+Date: 29/04/24
+Version: Assignment 2 Web Design
+*/
+
+/* COLOURS
+----------------------------------------
+#211d1c - dark brown (for text)
+#2f261d - brown
+#4389a2 - teal
+#c62d03 - burnt red
+*/
+
+/* GLOBAL SETTING
+----------------------------------------
+*/
+
+body {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    color: #211d1c;
+    margin: 0;
+}
+
+#wrapper {
+    position: relative;
+    width: 1600px; 
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.3em;
+    font-weight: 10;
+}
+
+a {
+    color: #225c71; /* dark teal */
+}
+
+a:visited {
+    color: #5A7E4A; /* dark green */
+}
+
+/* Nav and Logo
+----------------------------------------
+*/
+
+header {
+    background: #ffffff; /* pink/ main image banner */ 
+    height: 100px;
+    color: #5A7E4A; /* dark green */
+}
+
+header h1 {
+    visibility: hidden;
+}
+
+header img {
+    position: relative;
+    top: 0px;
+    left: 20px; 
+    z-index: 7; 
+}
+
+/* TOP BANNER
+----------------------------------------
+*/
+
+.banner {
+    background: #C7F0B5; 
+}
+
+.banner__content {
+    margin: 0 auto;
+    padding: 10px;
+    max-height: 16px;
+    text-align: center; 
+    font-size: 16px; 
+    color: darkgreen;
+    margin-left: 60px;
+}
+
+/* NAVIGATION
+---------------------------------------- */
+
+nav {
+    background-color: #ffffff;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding-top: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    padding-left: 480px;
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    font-size: 20px;
+}
+
+nav a {
+    color: darkgreen;
+    text-decoration: none;
+    padding: 10px 50px 15px 10px;
+    font-size: 20px;
+}
+
+nav a:visited {
+    color: darkgreen;
+}
+
+nav a:hover {
+    background-color: darkgreen;
+    color: white;
+}
+
+nav span {
+    padding: 15px 20px;
+    background-color: #C7F0B5;
+    color: #ffffff;
+}
+
+/* HEADER video
+----------------------------------------
+*/
+
+.video {
+    height: 680px; /* Set the height of the header */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    position: relative; /* Ensure the video stays within the header */
+    background-color: floralwhite;
+}
+
+.video video {
+    position: absolute; /* Position the video element */
+    width: 50%; /* Make the video cover the entire header */
+    height: 100%;
+    object-fit: contain; /* Ensure the video covers the entire header */
+}
+
+.video article {
+    position: relative; /* Ensure relative positioning for absolute positioning of children */
+    padding-top: 300px; /* Add padding to create space for the text */
+    padding-left: 0px;
+    color: black; /* Set the color of the text */
+}
+
+.video article section {
+    position: relative; /* Position the text content absolutely */
+    top: 50%; /* Position the text content vertically centered */
+    left: 70%; /* Position the text content horizontally centered */
+    transform: translate(-50%, -50%); /* Center the text content */
+    text-align: center; /* Center align the text content */
+    max-width: 50%; /* Set maximum width for the text content */
+}
+
+/* video2
+----------------------------------------
+*/
+
+.video2 {
+    height: 680px; /* Set the height of the header */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    position: relative;
+    padding-left: 400px; /* Ensure the video stays within the header */
+    background-color: #fcf0f2;
+}
+
+.video2 video {
+    position: absolute; /* Position the video element */
+    width: 100%; /* Make the video cover the entire header */
+    height: 100%;
+    object-fit: contain; /* Ensure the video covers the entire header */
+}
+
+.video2 article {
+    position: relative; /* Ensure relative positioning for absolute positioning of children */
+    padding-top: 350px; /* Add padding to create space for the text */
+    padding-left: 100px;
+    color: black; /* Set the color of the text */
+}
+
+.video2 article section {
+    position: static; /* Position the text content absolutely */
+    top: 50%; /* Position the text content vertically centered */
+    left: 50%; /* Position the text content horizontally centered */
+    transform: translate(-68%, -50%); /* Center the text content */
+    text-align: justify; /* Center align the text content */
+    max-width: 50%; /* Set maximum width for the text content */
+}
+
+.video2 img {
+    padding-top: 20px;
+    padding-left: 0px;
+}
+
+/* video3
+----------------------------------------
+*/
+
+.video3 {
+    height: 680px; /* Set the height of the header */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    position: relative;
+    background-color: #C7F0B5;
+}
+
+.video3 video {
+    position: absolute; /* Position the video element */
+    width: 40%; /* Make the video cover the entire header */
+    height: 100%;
+    object-fit: contain; /* Ensure the video covers the entire header */
+}
+
+.video3 article {
+    position: relative; /* Ensure relative positioning for absolute positioning of children */
+    padding-top: 350px; /* Add padding to create space for the text */
+    padding-left: 0px;
+    color: black; /* Set the color of the text */
+}
+
+.video3 article section {
+    position: relative; /* Position the text content absolutely */
+    top: 50%; /* Position the text content vertically centered */
+    left: 70%; /* Position the text content horizontally centered */
+    transform: translate(-58%, -50%); /* Center the text content */
+    text-align: end; /* Center align the text content */
+    max-width: 40%; /* Set maximum width for the text content */
+}
+
+.video3 img {
+    padding-top: 20px;
+    padding-right: 0px;
+}
+
+.video3 h2 {
+    text-align: justify;
+}
+
+/* FOOTER BANNER
+----------------------------------------
+*/
+
+.Footer_banner {
+    background-color: #fef7e7;
+}
+
+.Fbanner__content {
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 110px;
+    padding-left: 110px;
+    max-height: 300px;
+    text-align: center;
+    font-size: 16px;
+    color: darkgreen;
+}
+
+/* footer
+----------------------------------------
+*/
+
+footer {
+    background-color: #E5E4E2; /* light grey */
+    color: black; /* Text color for the footer */
+    padding-left: 180px; /* Padding around the footer content */
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer p {
+    margin: 10px 0; /* Margin between paragraphs */
+}
+
+footer a {
+    color: darkgreen; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    margin-right: 530px; /* Margin between links */
+}
+
+address {
+    margin-top: 50px; /* Margin between address and other footer content */
+}
+
+address a {
+    color: darkgreen; /* Link color within the address */
+    text-decoration: underline; /* Remove underline from links within the address */
+}
+

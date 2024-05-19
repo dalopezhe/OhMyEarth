@@ -1,0 +1,379 @@
+/* 
+Date: 29/04/24
+Version: Assignment 2 Web Design
+*/
+
+/* COLORS
+#211d1c - dark brown (for text)
+#2f261d - brown
+#4389a2 - teal
+#c62d03 - burnt red
+*/
+
+/* GLOBAL SETTINGS
+---------------------------------------- */
+body {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    color: #211d1c;
+    margin: 0;
+}
+
+#wrapper {
+    position: relative;
+    max-width: 1600px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+a {
+    color: #225c71; /* dark teal */
+}
+
+a:visited {
+    color: #5A7E4A; /* dark green */
+}
+
+/* TOP BANNER
+---------------------------------------- */
+.banner {
+    background: #C7F0B5;
+}
+
+.banner__content {
+    margin: 0 auto;
+    padding: 10px;
+    max-height: 16px;
+    text-align: center;
+    font-size: 16px;
+    color: darkgreen;
+    margin-left: 60px;
+}
+
+/* HEADER
+---------------------------------------- */
+header {
+    background: #FAE1DC url(Images!/All_big.png) no-repeat top center / cover;
+    height: 450px;
+    color: #5A7E4A; /* dark green */
+}
+
+header h1 {
+    visibility: hidden;
+}
+
+header img {
+    position: relative;
+    top: 0px;
+    left: 20px;
+    z-index: 7;
+}
+
+/* BELOW BANNER 2
+---------------------------------------- */
+.font-display-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C7F0B5;
+}
+
+.font-display {
+    padding: 1rem 5rem;
+    flex-grow: 1;
+    text-align: center;
+    color: azure;
+}
+
+/* ECO SECTION
+---------------------------------------- */
+#Eco {
+    text-align: center;
+    color: darkgreen;
+    padding-bottom: 15px;
+}
+
+#Eco p {
+    color: black;
+}
+
+/* NAVIGATION
+---------------------------------------- */
+nav {
+    background-color: #ffffff;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding-top: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    padding-left: 480px;
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    font-size: 20px;
+    
+}
+
+nav a {
+    color: darkgreen;
+    text-decoration: none;
+    padding: 10px 50px 15px 10px;
+    font-size: 20px;
+}
+
+nav a:visited {
+    color: darkgreen;
+}
+
+nav a:hover {
+    background-color: darkgreen;
+    color: white;
+}
+
+nav span {
+    padding: 15px 20px;
+    background-color: #C7F0B5;
+    color: #ffffff;
+}
+
+/* CONTENT 2
+---------------------------------------- */
+#three-columns {
+    display: flex;
+    text-align: center;
+    padding: 20px 10px 20px 180px;
+    background-color: #fcf0f2;
+}
+
+/* CONTENT 3
+---------------------------------------- */
+/* Title Best eco products
+---------------------------------------- */
+#best_Eco {
+    text-align: center;
+    color: darkgreen;
+    padding: 5px 10px;
+    background-color: floralwhite;
+}
+
+#three-columns2 section {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: floralwhite;
+}
+
+.item {
+    margin: 10px;
+    text-align: center;
+}
+
+.item img {
+    display: block;
+}
+
+.item p {
+    margin-top: 5px;
+}
+
+/* SIDEBAR
+---------------------------------------- */
+blockquote {
+    padding: 10px 0 10px 180px;
+    background-color: #C7F0B5;
+    margin: auto;
+}
+
+/* FOOTER
+---------------------------------------- */
+footer {
+    background-color: #E5E4E2;
+    color: black;
+    padding: 50px 0 50px 180px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: darkgreen;
+    text-decoration: none;
+    margin-right: 530px;
+}
+
+address {
+    margin-top: 50px;
+}
+
+address a {
+    color: darkgreen;
+    text-decoration: underline;
+}
+
+/* MEDIA QUERIES
+---------------------------------------- */
+@media (max-width: 1000px) {
+    #wrapper {
+        width: 100%;
+    }
+
+    .font-display-container {
+        margin: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    header {
+        background: url(Images!/All.png);
+        height: 400px;
+    }
+
+    header img {
+        width: 20%;
+        height: auto;
+    }
+
+    nav {
+        padding-top: 70px;
+    }
+
+    nav ul {
+        padding-left: 5px;
+    }
+
+    .font-display-container {
+        flex-wrap: wrap;
+    }
+
+    #Eco {
+        flex-wrap: wrap;
+        padding: 0 5px;
+    }
+
+    #three-columns {
+        display: block;
+        text-align: left;
+        flex-wrap: wrap;
+        padding: 0 80px;
+    }
+
+    footer {
+        padding-right: 80px;
+    }
+
+    footer ul {
+        flex-wrap: wrap;
+    }
+
+    footer li {
+        padding-bottom: 10px;
+    }
+
+    #three-columns2 section {
+        display: block;
+        text-align: left;
+        flex-wrap: wrap;
+    }
+
+    #three-columns2 section img {
+        float: inherit;
+        margin: 30px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        background: url(Images!/All.png);
+        height: 0;
+    }
+
+    header img {
+        width: 20%;
+        height: auto;
+    }
+
+    nav {
+        padding-top: 30px;
+    }
+
+    nav ul {
+        padding-left: 5px;
+    }
+
+    nav a {
+        font-size: 3.5vw;
+    }
+
+    nav li {
+        font-size: 1vw;
+    }
+
+    .font-display-container {
+        flex-wrap: wrap;
+    }
+
+    #Eco {
+        flex-wrap: wrap;
+        padding:  10px;
+    }
+
+    #three-columns {
+        display: block;
+        text-align: left;
+        flex-wrap: wrap;
+        padding: 80px;
+    }
+
+    footer {
+        padding: 50px 80px;
+    }
+
+    footer ul {
+        flex-wrap: wrap;
+    }
+
+    footer li {
+        padding-bottom: 10px;
+    }
+
+    #three-columns2 section {
+        display: block;
+        text-align: left;
+        flex-wrap: wrap;
+    }
+
+    #three-columns2 section img {
+        float: inherit;
+        margin: 30px 20px;
+        flex-wrap: wrap;
+    }
+
+    blockquote {
+        flex-wrap: wrap;
+        padding: 80px;
+    }
+}
+
+
+
+   
+   
+    

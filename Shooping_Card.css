@@ -1,0 +1,163 @@
+/* GLOBAL SETTINGS */
+body {
+	font-size: 16px;
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+	color: #211d1c;
+	margin: 0;
+}
+
+#wrapper {
+	position: relative;
+	width: 1600px; 
+	margin: 0 auto;
+}
+
+h2 {
+	font-size: 1.8em;
+	font-weight: 350;
+}
+
+h3 {
+	font-size: 1.2em;
+	font-weight: 600;
+}
+
+h4 {
+	font-size: 1.3em;
+	font-weight: 10;
+}
+
+a {
+	color: #225c71; /* dark teal */
+}
+
+a:visited {
+	color: #5A7E4A; /* dark green */
+}
+
+/* NAVIGATION AND HEADER */
+header h1 {
+	visibility: hidden;
+}
+
+header img {
+	position: relative;
+	top: 0px;
+	left: 20px;
+	z-index: 7;
+}
+
+.banner {
+	background: #C7F0B5;
+}
+
+.banner__content {
+	margin: 0 auto;
+	padding: 10px;
+	max-height: 16px;
+	text-align: center;
+	font-size: 16px;
+	color: darkgreen;
+	margin-left: 60px;
+}
+
+nav {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	padding-top: 40px;
+	background-blend-mode: overlay;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+	padding-left: 480px;
+	list-style: none;
+}
+
+nav li {
+	display: inline;
+	font-size: 20px;
+}
+
+nav a {
+	color: darkgreen;
+	text-decoration: none;
+	padding: 10px 50px 15px 10px;
+	font-size: 20px;
+}
+
+nav a visited {
+	color: #ffffff;
+}
+
+nav a hover {
+	background-color: darkgreen;
+}
+
+nav span {
+	padding: 15px 20px 15px 20px;
+	background-color: #C7F0B5;
+	color: #ffffff;
+}
+
+/* CONTENT AREA 1 */
+article {
+	padding-top: 0px;
+	padding-left: 300px;
+	padding-right: 450px;
+	padding-bottom: 100px;
+	color: black;
+	text-align: center;
+}
+
+article img {
+	padding-top: 0px;
+	padding-left: 310px;
+}
+
+article h2 {
+	padding-left: 300px;
+}
+
+article p {
+	padding-left: 300px;
+}
+
+article a {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 1.2em;
+	border: 2px solid #E5E4E2;
+	margin-left: 300px;
+}
+
+/* FOOTER */
+footer {
+	background-color: #E5E4E2;
+	color: black;
+	padding-left: 180px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+footer p {
+	margin: 10px 0;
+}
+
+footer a {
+	color: darkgreen;
+	text-decoration: none;
+	margin-right: 530px;
+}
+
+address {
+	margin-top: 50px;
+}
+
+address a {
+	color: darkgreen;
+	text-decoration: underline;
+}
